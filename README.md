@@ -1,5 +1,5 @@
 # cmusphynxfork
-A fork of the CMU Sphynx github project. The fork has the changs described in the Changes paragraph
+A fork of the CMU Sphynx github project. The fork has the changes described in the Changes paragraph
 
 # Changes
 
