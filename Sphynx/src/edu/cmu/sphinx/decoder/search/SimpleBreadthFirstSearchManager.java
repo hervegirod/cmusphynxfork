@@ -203,6 +203,7 @@ public class SimpleBreadthFirstSearchManager extends TokenSearchManager {
     * @param nFrames the number of frames to recognize
     * @return the current result or null if there is no Result (due to the lack of frames to recognize)
     */
+   @Override
    public Result recognize(int nFrames) {
       boolean done = false;
       Result result = null;
@@ -220,8 +221,7 @@ public class SimpleBreadthFirstSearchManager extends TokenSearchManager {
 
          // Now create the result using the fixed active-list.
          if (!streamEnd) {
-            result
-               = new Result(fixedList, resultList, currentFrameNumber, done, linguist.getSearchGraph().getWordTokenFirst(), false);
+            result = new Result(fixedList, resultList, currentFrameNumber, done, linguist.getSearchGraph().getWordTokenFirst(), false);
          }
       }
 

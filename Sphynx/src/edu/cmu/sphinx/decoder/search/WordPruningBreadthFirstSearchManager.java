@@ -280,6 +280,7 @@ public class WordPruningBreadthFirstSearchManager extends TokenSearchManager {
     * the number of frames to recognize
     * @return the current result
     */
+   @Override
    public Result recognize(int nFrames) {
       boolean done = false;
       Result result = null;
